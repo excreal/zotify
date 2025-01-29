@@ -14,40 +14,40 @@ I am running ubuntu 22.04. If you are on windows I suggest you install Windows S
 ### Requirements
 pyenv ffmpeg and python 3.11
 ```
-Install ffmpeg
+# Install ffmpeg
 sudo apt update
 sudo apt install ffmpeg
 
-Install pyenv, or your preferred env tool (https://github.com/pyenv/pyenv)
+# Install pyenv, or your preferred env tool (https://github.com/pyenv/pyenv)
 curl -fsSL https://pyenv.run | bash
 
-Install python 3.11
+# Install python 3.11
 pyenv install 3.11
 ```
 ### Get credentials
 The current code on the main branch does not authenticate correctly. As a work around for this clone the dev branch, log in and extract the credentials.json file
 ```
-Create venv
+# Create venv
 pyenv virtualenv 3.11 {env_name}
 
-Clone repo and install
+# Clone repo and install
 git clone --branch v1.0-dev https://github.com/zotify-dev/zotify.git
 cd zotify
 pip install .
 
-Run any zotify command and follow the steps to authenticate. This will out put credentials to /.config/Zotify/credentials.json . Save this credentials file somewhere for later.
+# Run any zotify command and follow the steps to authenticate. This will out put credentials to /.config/Zotify/credentials.json . Save #this credentials file somewhere for later.
 
-Deactivate env
+# Deactivate env
 pyenv deactivate {venv_name}
 ```
 
 ### Install
 
 ```
-Create a fresh environment
+# Create a fresh environment
 pyenv virtualenv 3.11 {venv_name}
 
-Clone this repo and install zotify
+# Clone this repo and install zotify
 git clone https://github.com/bgeorgakas/zotify.git
 cd zotify
 pip install .
