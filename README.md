@@ -35,7 +35,7 @@ git clone --branch v1.0-dev https://github.com/zotify-dev/zotify.git
 cd zotify
 pip install .
 
-# Run any zotify command and follow the steps to authenticate. This will out put credentials to /.config/Zotify/credentials.json . Save #this credentials file somewhere for later.
+# Run any zotify command and follow the steps to authenticate. This will out put credentials to /.config/Zotify/credentials.json . Save this credentials file somewhere for later.
 
 # Deactivate env
 pyenv deactivate {venv_name}
